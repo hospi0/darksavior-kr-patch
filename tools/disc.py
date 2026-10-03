@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-r"""다크 세이버 원본 디스크 — 파일 목록·읽기, work/disc/ 에 «불변 사본» 꺼내기 (2026-10-03)
+r"""다크 세이비어 원본 디스크 — 파일 목록·읽기, work/disc/ 에 «불변 사본» 꺼내기 (2026-10-03)
   트랙 1 MODE1/2352, 루트 + D_SAVIOR/ (PROGRAM.000‥535) + DS_CDDA/.
   python tools/disc.py            → 필요한 파일을 work/disc/ 로 (이미 있으면 md5 대조만)
 """
@@ -9,7 +9,7 @@ sys.path.insert(0, HERE)
 sys.path.append(r'C:\claude\project\anearth-kr-patch\tools')      # cdmode1 (iso.py 가 씀)
 import iso
 
-SRC_DIR = r'C:\claude\roms\ss\Dark Savior (Japan)'
+SRC_DIR = r'C:\claude\roms\ss\완료\Dark Savior (Japan)'          # 2026-10-03 사용자가 완료 폴더로 옮김
 TRACK1 = os.path.join(SRC_DIR, 'Dark Savior (Japan) (Track 1).bin')
 TRACK1_MD5 = 'f2d871c8afa6defb4456e83807f4de07'
 DISC = os.path.join(ROOT, 'work', 'disc')

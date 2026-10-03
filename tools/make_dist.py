@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-r"""다크 세이버 배포 묶음 — dist/DarkSavior_KR_<VER>/ : 트랙 1 xdelta + xdelta.exe + readme.txt(CP949) + 한글패치_적용.bat + zip
+r"""다크 세이비어 배포 묶음 — dist/DarkSavior_KR_<VER>/ : 트랙 1 xdelta + xdelta.exe + readme.txt(CP949) + 한글패치_적용.bat + zip
   (블루 브레이커 tools/make_dist.py 를 옮김) 검증: 원본 트랙 1 → xdelta 적용 → md5 = 빌드 결과(work/out) md5.
   python tools/make_dist.py   (먼저 python tools/build.py --write 또는 --install)
 """
@@ -11,7 +11,7 @@ import disc
 VER = 'v0.9'
 XDELTA = r'C:\claude\utils\xdelta.exe'
 NAME = 'DarkSavior_KR_' + VER
-TITLE = '다크 세이버 (세가 새턴 일본판) 한글 패치 ' + VER
+TITLE = '다크 세이비어 (세가 새턴 일본판) 한글 패치 ' + VER
 ROMNAME = 'Dark Savior (Japan)'
 TRACKS = 2
 
