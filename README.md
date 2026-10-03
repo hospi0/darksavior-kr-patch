@@ -3,7 +3,7 @@
 ## 내려받기
 - 최신 **v0.9** — [릴리즈](https://github.com/hospi0/darksavior-kr-patch/releases/latest)에서 `DarkSavior_KR_v0.9.zip`
 - 대상: `Dark Savior (Japan)` 트랙 1 (트랙 2개)
-- 원본md5 `F2D871C8AFA6DEFB4456E83807F4DE07` → 패치md5 `454C7601C7407F5C4A332591148B23BB`
+- 원본md5 `F2D871C8AFA6DEFB4456E83807F4DE07` → 패치md5 `6DD229CE58ACA48C5005B045B96EE3AB`
 
 ## 작업 저장소
 

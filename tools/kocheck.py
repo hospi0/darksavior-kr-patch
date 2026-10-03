@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import extract as E
 TOK = re.compile(r'(\{[^}]*\})')
-FIRST = 19                         # ★페이지 첫 줄 = 화자 이름+「 가 앞에 붙는다({7}, 실행 중 결정) — 이름 4글자까지 안전(독쿠루 507:0273 잘림)
+FIRST = 18                         # ★페이지 첫 줄 = 화자 이름+「 가 앞에 붙는다({7}, 실행 중 결정) — 가장 긴 화자 이름 5글자(쿠르트리겐·프라이데이·그리 선장)+「 = 6칸 → 24−6
 LIMIT = 24                         # ★2026-10-03 실기: 화자 대사 둘째 줄부터 1칸 들여쓰기 → 한글 24칸(25칸째 「다」 잘림, 카이저 507:0053)
 PUNCT = ",.!?:;)]}'\"~、。，．！？：；）］｝」』】〉》”’…‥・·～〜♪♥"
 SQ = re.compile('([' + re.escape(PUNCT) + '])[ 　](?![ 　])')
@@ -114,7 +114,7 @@ def main():
             pg.append((max(P), max(pj), i, k))
     syl = {ch for r in R.values() for ch in squeeze(r['번역']) if '가' <= ch <= '힣'}
     print('① 문장부호 뒤 공백 %d곳 (빌더가 지운다)' % nsq)
-    print('② 한 줄 %d칸(페이지 첫 줄 19) 초과 %d줄 (27칸 %d / 28+ %d)' % (LIMIT, len(over), sum(1 for o in over if o[0] == 27),
+    print('② 한 줄 %d칸(페이지 첫 줄 %d) 초과 %d줄 (참고 27칸 %d / 28+ %d)' % (LIMIT, FIRST, len(over), sum(1 for o in over if o[0] == 27),
                                                  sum(1 for o in over if o[0] >= 28)))
     print('③ 한 페이지 줄 수가 원문보다 많고 5줄 이상 %d건 (원문 최대 %d줄)' % (len(pg), maxpage))
     print('④ 글꼴에 없는 문자 %s' % ', '.join('%r×%d(%s)' % (c, n, badex[c]) for c, n in badch.most_common()))
